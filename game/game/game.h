@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#define HANG 3
+#define HANG 3 //定义棋盘的大小
 #define LIE 3
 #include<stdio.h>
 #include<stdlib.h>

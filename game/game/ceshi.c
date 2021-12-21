@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include"game.h"
-void caidan()
+#include"game.h" //引用一个自定义的头文件，如果有什么需要重复打的东西，可以直接输入到头文件里去，然后引用
+void caidan()//游戏菜单
 {
 	printf("***************\n");
 	printf("输入1开始游戏，输入0退出游戏\n");
@@ -13,18 +13,18 @@ void game()
 	char qipan[HANG][LIE] = {0};//先设置棋盘里面都是空格
 	sqipan(qipan, HANG, LIE);//生成棋盘
 	dqipan(qipan,HANG,LIE);//打印棋盘
-	while (1)
+	while (1)//让玩家多玩几次
 	{
 		wanxiaqi(qipan,HANG,LIE);//玩家下棋
 		dqipan(qipan, HANG, LIE);
-		a = win(qipan, HANG, LIE);//判断输赢
+		a = win(qipan, HANG, LIE);//返回一个值来判断输赢
 		if (a != 'C')
 		{
 			break;
 		}
 		cpxiaqi(qipan, HANG, LIE);//电脑下棋
-		dqipan(qipan, HANG, LIE);
-		a = win(qipan, HANG, LIE);//判断输赢
+		dqipan(qipan, HANG, LIE);//打印棋盘
+		a = win(qipan, HANG, LIE);//返回一个值来判断输赢
 		if (a != 'C')
 		{
 			break;

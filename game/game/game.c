@@ -50,7 +50,7 @@ void dqipan(char qipan[HANG][LIE],int hang,int lie)//实现打印棋盘与格式
 	}
 	printf("\n\n");
 }
-void wanxiaqi(char qipan[HANG][LIE], int hang, int lie)
+void wanxiaqi(char qipan[HANG][LIE], int hang, int lie) //实现玩家走棋
 {
 
 	printf("玩家走\n");
@@ -83,7 +83,7 @@ void wanxiaqi(char qipan[HANG][LIE], int hang, int lie)
 		}
 	}
 }
-void cpxiaqi(char qipan[HANG][LIE], int hang, int lie,int yi)
+void cpxiaqi(char qipan[HANG][LIE], int hang, int lie,int yi)//电脑走棋，并且判断对方走棋和自己走棋，来进行走棋
 {
 	int i1 = 0;
 	printf("电脑走,请稍等......\n");
@@ -330,7 +330,7 @@ void cpxiaqi(char qipan[HANG][LIE], int hang, int lie,int yi)
 
 }	
 
-char win(char qipan[HANG][LIE], int hang, int lie)
+char win(char qipan[HANG][LIE], int hang, int lie)//判断输赢，并且返回一个值，来进行判断
 {
 	int i1 = 0;
 	for (int i = 0; i < hang; i++)
@@ -378,5 +378,5 @@ char win(char qipan[HANG][LIE], int hang, int lie)
 				}
 			}
 		}	
-	//return 'P';
+	return 'P';
 }
