@@ -1,0 +1,5 @@
+﻿  game.c
+C:\Users\OMEN\source\repos\game\game\game.c(83,1): warning C4029: 声明的形参表不同于定义
+C:\Users\OMEN\source\repos\game\game\game.c(106,25): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+C:\Users\OMEN\source\repos\game\game\game.c(378): warning C4715: “win”: 不是所有的控件路径都返回值
+  game.vcxproj -> C:\Users\OMEN\source\repos\game\Debug\game.exe
