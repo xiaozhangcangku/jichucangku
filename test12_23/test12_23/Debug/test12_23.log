@@ -1,1 +1,10 @@
-﻿  test12_23.vcxproj -> E:\github仓库\test12_23\Debug\test12_23.exe
+﻿  game.c
+E:\github仓库\jichucangku\test12_23\test12_23\game.c(14,19): warning C4028: 形参 1 与声明不同
+E:\github仓库\jichucangku\test12_23\test12_23\game.c(41,8): warning C4013: “srand”未定义；假设外部返回 int
+E:\github仓库\jichucangku\test12_23\test12_23\game.c(41,27): warning C4013: “time”未定义；假设外部返回 int
+E:\github仓库\jichucangku\test12_23\test12_23\game.c(42,15): warning C4013: “rand”未定义；假设外部返回 int
+  test.c
+E:\github仓库\jichucangku\test12_23\test12_23\test.c(18,14): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
+  正在生成代码...
+E:\github仓库\jichucangku\test12_23\test12_23\game.c(81): warning C4715: “pailei”: 不是所有的控件路径都返回值
+  test12_23.vcxproj -> E:\github仓库\jichucangku\test12_23\Debug\test12_23.exe
