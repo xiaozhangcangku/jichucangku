@@ -7,7 +7,7 @@ void chushi(char arr[HANGS][LIES],char lei[HANGS][LIES],int hang,int lie)
 		for (int i1 = 0; i1 < lie; i1++)
 		{
 			arr[i][i1] = '+';
-			lei[i][i1] = 'o';
+			//lei[i][i1] = 'o';
 		}
 	}
 }
@@ -38,7 +38,6 @@ void lei1(char lei[HANGS][LIES], int hang, int lie)
 	printf("      扫雷游戏规则\n每下一个格子，格子上的数字代表围绕着这个格子的8个格子有多少个雷\n");
 	do
 	{
-		srand((unsigned int)time(NULL));
 		int a = rand() % HANG + 1;
 		int b = rand() % LIE + 1;
 		if (a >= 1 && b >= 1 && lei[a][b] != '*')
@@ -46,8 +45,8 @@ void lei1(char lei[HANGS][LIES], int hang, int lie)
 			lei[a][b] = '*';
 			u++;
 		}
-	} while (u < 10);
-	printf("已经完成埋雷，共10个\n");
+	} while (u <= HANGS-1);
+	printf("已经完成埋雷，共%d个\n",u);
 }
 
 char pailei(char arr[HANGS][LIES], char lei[HANGS][LIES])
@@ -76,6 +75,7 @@ char pailei(char arr[HANGS][LIES], char lei[HANGS][LIES])
 				}
 			}
 		}
+
 	}
 	arr[c][d] = l;
 }

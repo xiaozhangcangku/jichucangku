@@ -1,8 +1,5 @@
 ﻿  game.c
 E:\github仓库\jichucangku\test12_23\test12_23\game.c(14,19): warning C4028: 形参 1 与声明不同
-E:\github仓库\jichucangku\test12_23\test12_23\game.c(41,8): warning C4013: “srand”未定义；假设外部返回 int
-E:\github仓库\jichucangku\test12_23\test12_23\game.c(41,27): warning C4013: “time”未定义；假设外部返回 int
-E:\github仓库\jichucangku\test12_23\test12_23\game.c(42,15): warning C4013: “rand”未定义；假设外部返回 int
   test.c
 E:\github仓库\jichucangku\test12_23\test12_23\test.c(18,14): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
   正在生成代码...

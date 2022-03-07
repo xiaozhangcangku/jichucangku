@@ -12,7 +12,7 @@ void game()
 	char lei[HANGS][LIES] = { 0 };//隐藏的雷的一个格子
 	chushi(arr,lei,HANGS,LIES);
 	lei1(lei, HANG, LIE);//埋藏的雷
-	//jiemian(lei, HANG, LIE);//扫雷界面
+	//jiemian(lei, HANG, LIE);//打印布置雷的界面
 	while (1)
 	{
 		jiemian(arr, HANG, LIE);//扫雷界面
@@ -47,6 +47,7 @@ void xuanze()
 }
 int main()
 {
+	srand((unsigned int)time(NULL));
 	xuanze();
 	return 0;
 }

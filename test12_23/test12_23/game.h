@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
 #define HANG 9
 #define LIE 9
 #define HANGS HANG+2
