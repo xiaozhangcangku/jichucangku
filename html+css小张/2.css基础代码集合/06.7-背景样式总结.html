@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景样式</title>
+    <style>
+        /* 背景颜色 */
+        #bg-color {
+            width: 200px;
+            height: 200px;
+            /*背景颜色*/
+            background-color: pink;
+        }
+
+        /* 背景图片与平铺样式 */
+        #bg-image {
+            width: 200px;
+            height: 300px;
+            /* 当图片的大小不足这个盒子的大小，他会自动平铺 */
+            background-image: url(image.png);
+            /* repet的意思是背景平铺 */
+            /* repet就是平铺x和y轴 */
+            background-repeat: repeat-y;
+
+            /* 也可以背景颜色和背景图片在一起显示，但是背景图片会压住背景颜色 */
+        }
+
+        /* 背景图片位置 */
+        #bg-position {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(image.png);
+            background-repeat: no-repeat;
+            /* 改变图片的位置 */
+            /* background-position: 方位名词; */
+            /* background-position: center top;
+            background-position: center right; */
+            /* 这个意思就是在这个盒子中上的位置，然后垂直方向的中间右边，与顺序无关*/
+
+            /* 等价于这个 */
+            /* 因为right是水平方向的，所以系统会识别为x轴，那center就是y轴的居中 */
+            /* background-position: center right; */
+
+            /* 等价于这个，因为right是水平方向的往右，就为x */
+            /* 没有的那个轴，系统会默认居中，这里就是默认垂直居中，然后靠右 */
+            background-position: right;
+
+
+        }
+
+
+        /* 背景位置方位名词的应用 */
+        #bg-yingyong {
+            width: 118px;
+            height: 40px;
+            background-color: pink;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 40px;
+
+            background-image: url(image/image2.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg-color"></div>
+
+    <div id="bg-image"></div>
+
+    <div id="bg-position"></div>
+
+    <!-- 背景位置方位名词应用 -->
+    <h3 id="bg-yingyong">成长守护平台</h3>
+
+
+</body>
+
+</html>

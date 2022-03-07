@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- form表单域标签 -->
+    <form action="提交给指定的url地址">
+
+    </form>
+
+    <!-- 表单元素(input) -->
+    <form action="">
+        
+        <!-- type后面代表的是属性值,这里的text为一个文本属性值 -->
+        用户名:<input type="text" name="mingzi" >  <br>
+
+        <!-- 这里的password代表的是密码的属性值,输入的文本会自动掩码 -->
+        密码: <input type="password" name="password" > <br>
+
+        <!-- radio是单选按钮,可以实现多选一 --> 
+        <!-- name是表单元素的名字,这里的性别单选按钮必须有相同的名字name,才能实现多选1 -->
+        性别: 男<input type="radio" name="xingbie" value="男"> 
+              女<input type="radio" name="xingbie" value="女"><br>
+
+        <!-- checkbox是复选框属性 -->
+        <!-- value这个属性是告诉后台人员,他选择的是什么,想要让后台知道就必须加value -->
+        爱好: 吃饭 <input type="checkbox" name="aihao" value="吃饭"> 
+              睡觉<input type="checkbox" name="aihao" value="睡觉">
+              打豆豆<input type="checkbox" name="aihao" value="打豆豆">
+        <br><br>    
+
+        <!--单选按钮和复选框可以设置checked属性，当打开页面就默认选中这个按钮
+         但是单选按钮的checked属性，只能设置一个，因为是单选 -->
+         性别: 男<input type="radio" name="xingbie1" value="男" checked="checked">
+               女<input type="radio" name="xingbie1" value="女">
+               <br>
+
+               <!-- 提交按钮，点了提交就会把表单域form里面的表单元素里面的值提交给后台的服务器 -->
+               <input type="submit" name="tijiao" value="免费注册"> 
+               
+               <!-- 重置按钮，点了之后就会重置表单里面的表单元素变为初始状态 -->
+               <input type="reset">  <br>
+
+               <!-- 普通按钮button,后期结合js搭配使用 -->
+               <input type="button" value="发送验证码"> &nbsp;
+
+               <!-- 文件域 file是一个上传图片的属性值，上传文件使用的 -->
+               上传图像: <input type="file" > <br> <br>
+               
+
+               <!-- label标签的使用,当点击文字的时候也会选中指定的地方，提升用户体验-->
+                <label for="yonghu">请输入用户名:</label>
+               <input type="text" name="用户名" id="yonghu"><br>
+               <!-- 单选按钮也是一样，用了label点击文字就可以，直接选中 -->
+                <label for="sex">男</label>
+               <input type="radio" name="sex" id="sex">
+               <label for="sex1">女</label>
+               <input type="radio" name="sex" id="sex1"> <br><br>
+
+
+               <!-- select下拉标签 -->
+           籍贯 <select name="" id="">
+            <!-- selected="selected"意思就为默认为北京,与上面的checked用法一致，就是默认选择 -->
+            <option value="Chinese" selected="selected">北京</option>
+            <option value="Chinese">湖南</option>
+            <option value="Chinese">广东</option>
+            <option value="Chinese">火星</option>
+            <option value="Chinese">木星</option>
+            <option value="Chinese">二次元</option>
+            <option value="Chinese">湖北</option>
+        </select> <br><br>
+
+
+        <!-- textarea文本域标签（特大号的文本框），经常用于意见反馈之类所需大量文字的 -->
+      今日反馈<textarea>这个反馈留言是用textarea来做的</textarea>
+
+
+    </form>    
+</body>
+</html> 

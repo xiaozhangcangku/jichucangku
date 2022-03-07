@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之伪类选择器</title>
+    <style>
+        /* 各种链接样式的使用，实际开发中不经常使用这种写法 */
+        /* 未访问过的链接 a:link 选出来进行更改样式*/
+        a:link {
+            /* 这个就是把链接名一开始更改为黑色 */
+            /* 也可以说链接名一开始改为的样式 */
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            /* 选择访问过的链接，进行变色 */
+            /* 简单来说就是点击一下这个链接，然后这个链接名就会变指定的样式 */
+            color: yellow;
+        }
+
+        a:hover {
+            /* 意思为鼠标经过时，链接名显示的样式 */
+            /* 可以是class里面的hover */
+            color: turquoise;
+            text-decoration: overline;
+        }
+
+        a:active {
+            /* 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+            /* 简单来说就是，我们鼠标一直按下这个链接，没松开鼠标时的样式 */
+            color: green;
+            text-decoration: line-through;
+        }
+
+        /* 实际开发一般就给链接名变个色，然后鼠标经过在加一个变色 */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        /* 一般是这样写的，给个显示链接名的颜色样式，在给个经过链接名的颜色的样式 */
+    </style>
+</head>
+
+<body>
+    <a href="#">链接样式</a>
+    <a href="http://www.xxxxx.com">没有访问过的链接</a>
+</body>
+
+</html>

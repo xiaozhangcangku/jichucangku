@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行块元素之间的转换</title>
+    <style>
+        a {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 把行内元素 a 转换为 块级元素 */
+            display: block;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* 意思就是把块级元素转换为一个行内元素 */
+            /* 这样就是两个块元素占一行，但是修改宽高就不会修改了 */
+            display: inline;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* 意思就是转换为行内块元素 */
+            /* 既能改变宽高，也能两个块在一行 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">这是一个行内元素,要把他转换为有块元素的属性</a>
+    <a href="#">他就会独占一行</a>
+    <div>这是一个块级元素</div>
+    <div>每个div独占一行</div>
+    <span>这是一个行内元素</span>
+    <span>行内元素改变不了宽高</span>
+</body>
+
+</html>

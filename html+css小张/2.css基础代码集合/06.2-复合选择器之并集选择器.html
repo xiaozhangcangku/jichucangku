@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之并集选择器</title>
+    <style>
+        div,
+        span {
+            color: pink;
+        }
+
+        p,
+        ul li {
+            /* 意思就是选择p标签和ul里面的li标签，用了后代选择器 */
+            /* 可以这样用并集选择器 */
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>选择同级标签</div>
+    <span>这个也能选择上</span>
+    <p>也可以选择这个</p>
+    <ul>
+        <li>小猪</li>
+        <li>佩琦</li>
+        <li>改这里</li>
+    </ul>
+</body>
+
+</html>

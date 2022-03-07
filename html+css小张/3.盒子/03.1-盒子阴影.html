@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        div:hover {
+            /* 这个rgba里面的.3意思是30％的黑色 */
+            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, .3);
+
+        }
+
+        .wenzi {
+            font-size: 50px;
+            color: orange;
+            font-weight: 700;
+            /* 文字阴影 */
+            text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+    <p class="wenzi">你是阴影，我是火影</p>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位之固定定位</title>
+    <style>
+        .dj {
+            /* 固定定位 */
+            /* 他是以浏览器的可视窗口来进行定位的 */
+            /* 他跟绝对定位一样，都是不占据原来的位置 */
+            position: fixed;
+            left: 0;
+            top: 100px;
+        }
+
+        .dj1 {
+            position: fixed;
+            right: 0;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 我们一般是把一个需要固定定位的，用一个盒子装起来 -->
+    <!-- 到时候移动位置时，直接移动这个盒子就好 -->
+    <div class="dj">
+        <img src="image/dj.png" alt="">
+    </div>
+
+
+    <div class="dj1">
+        <img src="image/dj.png" alt="">
+    </div>
+</body>
+
+</html>

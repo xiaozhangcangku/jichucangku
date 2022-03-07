@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之后代选择器(重要)</title>
+    <style>
+        /* 把ol和ul中的li全部给选择出来，颜色改为pink */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            /*一层一层的写下去*/
+            color: red;
+        }
+
+        ul li {
+            color: royalblue;
+        }
+
+        .green li {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>
+            <a href="#">把这个字改为红色，用后代选择器</a>
+        </li>
+    </ol>
+
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+
+    <ul class="green">
+        <!-- 那我们只能在这搞个类名，通过类名来查找li -->
+        <li>我想改这个ul中li的文字</li>
+        <li>我想改这个ul中li的文字</li>
+        <li>我想改这个ul中li的文字</li>
+    </ul>
+</body>
+
+</html>

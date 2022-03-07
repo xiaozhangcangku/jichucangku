@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接标签的使用</title>
+</head>
+
+<body>
+    <h5 id="dingbu">顶部</h5>
+
+    <h2>锚点演示，跳转到微信图片</h2>
+    <a href="#tupian">微信图片</a>
+    <h4>#后面是自己定义的东西，然后下面的id要跟上面#定义的一样</h4>
+
+    <h1>1.外部链接</h1>
+    <h4>（1）这里的target默认是_self,意为在当前页面进行跳转</h4>
+    <a href="https://www.baidu.com/" target="">百度</a>
+
+    <h1>2.内部链接</h1>
+    <h4>网站内部链接的相互链接，直接链接内部名称即可</h4>
+    <a href="02.4-图像标签.html" target="_blank">图像标签的使用</a>
+
+    <h1>3.空链接</h1>
+    <h3>＃号意为空的链接</h3>
+    <a href="#">可以代表还未完成的主页标签</a>
+
+    <h1>4.下载文件</h1>
+    <h3>下载链接：地址链接的是 文件 .exe 或者是 .zip等压缩包形式</h3>
+    <h4>这个压缩包的链接地址其实就是，路径</h4>
+    <a href="微信图片_20211020101853.zip">微信图片的下载链接</a>
+
+    <h2>5.图片超链接(也可以是文字啊，视频啊等等)</h2>
+    <h4>（2）也可以使用，图像进行跳转，然后再进行一个target的调整</h4>
+    <h5>_blank意思为点击这个图片会帮你打开一个新的窗口进行跳转</h5>
+    <a href="https://www.baidu.com/" target="_blank"><img src="微信图片_20211020101853.jpg" alt="百度的跳转图片"
+            title="一个跳转到百度的图片"></a>
+
+    <h1>6.锚点链接</h1>
+    <h3 id="tupian">微信图片的页面位置</h3>
+    <img src="微信图片_20211020101853.jpg" alt="微信图片">
+    <a href="#dingbu">返回顶部</a>
+
+
+</body>
+
+</html>

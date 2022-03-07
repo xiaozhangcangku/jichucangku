@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位叠放次序</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .xiongda {
+            /* z-index就是调整定位的顺序，数值越大，定位会盖着别的定位 */
+            /* 后面不用加单位 */
+            z-index: 1;
+            background-color: skyblue;
+        }
+
+        .xionger {
+            z-index: 2;
+            background-color: pink;
+            top: 50px;
+            left: 50px;
+        }
+
+        .qiangge {
+            background-color: blue;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box qiangge">强哥</div>
+</body>
+
+</html>

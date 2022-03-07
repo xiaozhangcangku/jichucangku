@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片位置之精确对齐</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(image/logo.png);
+            background-repeat: no-repeat;
+
+            /* background-position: x y; 一定是x和y这个顺序 */
+            /* 50px代表的是图片最左端距离盒子多少，123px就是图片最顶端距离盒子是多少 */
+            /* 如果只写了一个，那这个数值肯定是x轴，剩下一个默认垂直居中 */
+            /* background-position: 50px 123px; */
+
+            /* 用混合使用也是有x和y的顺序之分，第一个值肯定是x */
+            background-position: 50px center;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

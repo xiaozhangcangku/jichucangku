@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之子选择器</title>
+    <style>
+        div>a {
+            color: red;
+        }
+
+        div>p>a {
+            /* 这样才会选择到ul里面的a标签 */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">这里的就会因为是第二级元素</a>
+        <p>只会选择最近一级的元素</p>
+        <p>
+            <a href="#">这里的a标签不会被选择到,除非像第二个子选择器一样，一层一层找到我</a>
+        </p>
+        <a href="#">这里的也会，因为这也是他的最近代元素</a>
+    </div>
+</body>
+
+</html>

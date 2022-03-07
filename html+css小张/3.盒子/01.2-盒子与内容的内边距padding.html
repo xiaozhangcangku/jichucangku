@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子与内容的边距padding</title>
+    <style>
+        /* padding会更改盒子的实际大小 */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* padding是设置盒子与文字之间的边距,padding会影响盒子的实际大小  */
+            padding-left: 20px;
+
+            /* 设置上面和文字直接的内边距为20px,实际他会往下面添加20个像素 */
+            /* 这样盒子的实际高度就会高20个像素,变为220个像素 */
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div> content是盒子内容content是盒子内容content是盒子内容</div>
+</body>
+
+</html>

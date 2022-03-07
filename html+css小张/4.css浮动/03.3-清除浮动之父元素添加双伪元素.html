@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动之添加双伪元素</title>
+    <style>
+        .clearfix:after,
+        .clearfix:before {
+            /* 也是给父元素添加 */
+            /* 先知道用这几行代码可以清除浮动 */
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box {
+            width: 980px;
+            border: 1px solid red;
+        }
+
+        .box2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .foot {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="box2">大毛</div>
+        <div class="box3">二毛</div>
+    </div>
+    <div class="foot">标准流</div>
+</body>
+
+</html>

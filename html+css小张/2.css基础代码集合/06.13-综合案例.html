@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例</title>
+    <style>
+        /* .nav {
+            width: 600px;
+            height: 58px;
+        } */
+        a {
+            /* 转换成一个行内块元素 */
+            display: inline-block;
+
+            text-decoration: none;
+            color: aliceblue;
+            width: 120px;
+            height: 58px;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 48px;
+        }
+
+        .wucai {
+            /* 意思为第一个链接显示的背景图片 */
+            background-image: url(image/bg1.png);
+        }
+
+        div .wucai:hover {
+            /* 用的后代选择器 */
+            /* 意思是这个名字的标签，鼠标经过显示的样式 */
+            background-image: url(image/bg11.png);
+        }
+
+        .wucai1 {
+            background-image: url(image/bg2.png);
+        }
+
+        div .wucai1:hover {
+            background-image: url(image/bg22.png);
+        }
+
+        .wucai2 {
+            background-image: url(image/bg3.jpg);
+        }
+
+        div .wucai2:hover {
+            background-image: url(image/bg3.png);
+        }
+
+        .wucai3 {
+            background-image: url(image/bg4.png);
+        }
+
+        div .wucai3:hover {
+            background-image: url(image/bg5.png);
+        }
+
+        .wucai4 {
+            background-image: url(image/bg5.png);
+        }
+
+        div .wucai4:hover {
+            background-image: url(image/bg1.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="wucai">五彩导航</a>
+        <a href="#" class="wucai1">五彩导航</a>
+        <a href="#" class="wucai2">五彩导航</a>
+        <a href="#" class="wucai3">五彩导航</a>
+        <a href="#" class="wucai4">五彩导航</a>
+    </div>
+</body>
+
+</html>

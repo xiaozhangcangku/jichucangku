@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土豆网案例</title>
+    <style>
+        .box {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            background: rgba(0, 0, 0, .5) url(image/arr.png) no-repeat center;
+        }
+
+        /* 当我们鼠标经过这个大盒子  然后就显示内部盒子的样式 */
+        .box:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="mask"></div>
+        <img src="image/tudou.jpg" alt="">
+
+    </div>
+
+</body>
+
+</html>

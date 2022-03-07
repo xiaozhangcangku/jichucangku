@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 意思就是四个圆角半径为10px */
+            border-radius: 10px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px; 50%等价于这一种写法，意思是高度和宽度的一半 */
+            /* 这样写出来也是一个圆 */
+            border-radius: 50%;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 只需要设置为高度的一半即可 */
+            border-radius: 50px;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 左上 右下 右上 左下 */
+            border-radius: 20px 30px 40px 50px;
+            /* 也可以输入两个数值 */
+        }
+    </style>
+</head>
+
+<body>
+    这是圆角的写法
+    <div class="box"></div>
+    这是圆的写法
+    <div class="box2"></div>
+    圆角长方形的写法
+    <div class="box3"></div>
+    可以设置四个角
+    <div class="box4"></div>
+</body>
+
+</html>

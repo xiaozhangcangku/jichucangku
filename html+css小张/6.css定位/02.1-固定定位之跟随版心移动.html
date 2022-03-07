@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位之跟随版心移动</title>
+    <style>
+        .w {
+            width: 800px;
+            height: 1400px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .fixed {
+            position: fixed;
+            /* 走到浏览器的一半 */
+            left: 50%;
+            /* 然后在让这个盒子离版心有他一半的距离 */
+            margin-left: 405px;
+            width: 50px;
+            height: 150px;
+            background-color: skyblue;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed"></div>
+    <div class="w">版心盒子 800像素</div>
+</body>
+
+</html>

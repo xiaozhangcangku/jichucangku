@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体复合属性的使用</title>
+    <style>
+        p {
+            /* font-size: 20px;
+            font-weight: 700;
+            font-style: italic; */
+            
+            /* 以下是复合属性的书写，有要求 */
+            /* font: font-style font-weight font-size/line-height font-family; */
+            /* 必须要按照顺序来进行书写，以空格隔开 */
+            /* font简写后面一定要设置font-size和font-family */
+            font: italic 700 20px "Microsoft Yahei";
+  
+        }
+    </style>
+</head>
+<body> 
+        <p>复合字体属性的使用</p>
+</body>
+</html>

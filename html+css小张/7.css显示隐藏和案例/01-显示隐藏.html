@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示隐藏</title>
+    <style>
+        .peiqi {
+            /* 隐藏，不但能隐藏，而且还不占有原来的位置 */
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .geogre {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+
+        .dad {
+            /* 隐藏元素，但还是会保留原本的位置 */
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .mom {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+
+        .over {
+            /* overflow: visible; 显示溢出 */
+
+            /* 隐藏溢出的内容  */
+            /* overflow: hidden; */
+
+            /* 溢出的部分显示滚动条，不超出盒子也会显示滚动条 */
+            /* overflow: scroll; */
+
+            /* 超出盒子的内容才会显示滚动条，如果不超出就不会显示 */
+            overflow: auto;
+
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="peiqi">佩琦</div>
+    <div class="geogre">乔治</div>
+
+    <div class="dad">爸爸</div>
+    <div class="mom">妈妈</div>
+
+    <div class="over">做老师的能不计利益多少，认认真真的跟随时代步伐，尽心尽力把知识传播出来，真的是 最伟大的老师。
+        学校的老师已经不好好讲课了，重点还开辅导班收费讲。
+        老师这个神圣的职业，也熬不住生活的柴米油盐[无语]
+        希望pink老师的视频一直都被新手学习到，Pink老师桃李遍天下！做老师的能不计利益多少，认认真真的跟随时代步伐，尽心尽力把知识传播出来，真的是 最伟大的老师。
+        学校的老师已经不好好讲课了，重点还开辅导班收费讲。
+        老师这个神圣的职业，也熬不住生活的柴米油盐[无语]
+        希望pink老师的视频一直都被新手学习到，Pink老师桃李遍天下！做老师的能不计利益多少，认认真真的跟随时代步伐，尽心尽力把知识传播出来，真的是 最伟大的老师。
+        学校的老师已经不好好讲课了，重点还开辅导班收费讲。
+        老师这个神圣的职业，也熬不住生活的柴米油盐[无语]
+        希望pink老师的视频一直都被新手学习到，Pink老师桃李遍天下！</div>
+</body>
+
+</html>

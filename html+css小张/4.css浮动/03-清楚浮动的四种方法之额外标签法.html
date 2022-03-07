@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动的四大方法之额外标签法</title>
+    <style>
+        .box1 {
+            width: 980px;
+            border: 1px solid red;
+        }
+
+        .box2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        .box3 {
+            float: left;
+            width: 250px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .foot {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+
+        .clear {
+            /* 清除左右两边的浮动 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">1</div>
+        <div class="box3">2</div>
+        <!-- 额外标签法:在最后一个浮动的盒子下面添加一个清除浮动的盒子 -->
+        <!-- 添加的这个元素必须是块级元素 -->
+        <div class="clear"></div>
+    </div>
+    <div class="foot">3</div>
+</body>
+
+</html>

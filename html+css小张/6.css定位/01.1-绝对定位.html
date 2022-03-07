@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位之绝对定位</title>
+    <style>
+        /* 绝对定位，是不保留原来的位置，也就是不占有原来的位置 */
+        .son {
+            position: absolute;
+            /* 与上面的距离是10px,与浏览器左边的距离是10px */
+            /* top: 10px;
+            left: 10px; */
+
+            /* 意思为,与浏览器的上面距离为100px,与浏览器的右边距离为200px */
+            /* top: 100px;
+            right: 200px; */
+
+            /* 这就是右下角 */
+            right: 0;
+            bottom: 0;
+
+
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .grandfather {
+            /* 以最近有元素的进行查找有没有定位 */
+            /* father没有,就来找grandfather,grandfather有就以他作为参考 */
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+            background-color: purple;
+        }
+
+        .father {
+            /* 需要给父元素添加一个定位 */
+            /* 儿子是以最近一级带有定位的祖先元素作为参考点 */
+            /* position: relative; */
+            float: right;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son1 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 演示的是没有祖先元素的时候,是以网页为参考 -->
+    <div class="son"></div>
+
+    <!-- 有祖先元素时 -->
+    <div class="grandfather">
+        <div class="father">
+            <div class="son1">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css语法规范之选择器</title>
+    <!-- style是一个样式标签，里面写的就是css代码样式 -->
+    <style>
+        /* 标签选择器：写上标签名 */
+        p {
+            /*p代表的是body标签内的p标签，然后修改p标签里面的内容的样式*/
+            color: red;
+            /*颜色为红色*/
+            font-size: 25px;
+            /*大小为45像素*/
+        }
+
+        div {
+            color: pink;
+        }
+
+        /* 类选择器，定义一个类*/
+        /* .类名{}意思就是把类名里面的样式去给标签使用。
+    只需要在标签内加上class="类名"，就可以让这个标签单独使用这个类里面的样式 */
+        .red {
+            color: red;
+            font-size: 30px;
+        }
+
+        .haokan {
+            color: seagreen;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 标签选择器 -->
+    <p>修改文字样式</p>
+    <p>基础选择器</p>
+    <p>基础选择器之标签选择器</p>
+    <div>小张</div>
+    <div>小张</div>
+    <div>小张</div>
+
+    <!-- 类选择器的使用 -->
+    <div class="red">类选择的使用</div>
+    <div>定义一个类</div>
+    <div class="haokan">类里面写上自己想要的样式</div>
+
+
+</body>
+
+</html>

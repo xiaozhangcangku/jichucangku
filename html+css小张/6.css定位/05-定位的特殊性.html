@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Ch ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊性</title>
+    <style>
+        span {
+            position: absolute;
+            /* 当一个行内元素加了定位的时候，可以在直接设置宽度和高度 */
+            width: 200px;
+            height: 150px;
+            background-color: pink;
+            margin-top: 300px;
+        }
+
+        div {
+            position: absolute;
+            /* 如果块级元素加了定位，没有给高度和宽度，他就会默认为内容的高度和宽度 */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <span>123</span>
+    <div>456</div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位之页面居中的算法</title>
+    <style>
+        .box {
+            position: absolute;
+            /* 1.先把这个盒子移到页面的50%，就只是把这个盒子的最左边靠到了页面的一半 */
+            left: 50%;
+            /* 2.然后在往左边缩进50px ，自己盒子宽度的一半*/
+            margin-left: -50px;
+
+            /* 1.top：50px;的意思就是把这个盒子的最顶上靠到页面的一半 */
+            top: 50%;
+            /* 因为只是靠到了最上面，所以还需要往上缩进盒子的一半，所以是负数 */
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

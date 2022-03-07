@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米布局案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1226px;
+            height: 614px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: skyblue;
+        }
+
+        .right {
+            float: right;
+            width: 992px;
+            height: 614px;
+            background-color: purple;
+        }
+
+        .right>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: pink;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

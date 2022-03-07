@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子与盒子之间的边距margin</title>
+    <style>
+        .one {
+            /* margin盒子之间的外边距 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 20px;
+
+            /* 简写模式跟padding一样 */
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .three {
+            /* 让盒子居中 */
+            width: 900px;
+            height: 300px;
+            /* 0代表的是上下距为0，auto代表左右为居中，这样这个和子就为水平居中 */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: #f3f5f7;
+}
+.clearfix:after,
+.clearfix:before {
+    /* 也是给父元素添加 */
+    /* 先知道用这几行代码可以清除浮动 */
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+
+}
+.header {
+    height: 42px;
+    margin: 30px auto;
+    /* background-color: pink; */
+}
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+.nav {
+    float: left;
+    margin-left: 45px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom:2px solid #00a4ff ;
+    color: #00a4ff;
+}
+.search {
+    float: left;
+    height: 42px;
+    /* background-color: skyblue; */
+    margin-left: 50px;
+}
+.search input {
+    float: left;
+    width: 345px;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #cececf;
+    padding-left: 15px;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: 0;
+   background: url(image/fa-search.png);
+}
+.user {
+    float: left;
+    margin-left: 40px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #a7a8a9;
+}
+/* banner区域 */
+.banner {
+    height: 420px;
+    background-color: #033db2;
+}
+.banner .w {
+    height: 420px;
+    background: url(image/banner2.png) no-repeat top center;
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+}
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+/*  */
+.course {
+    float:right;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+    width: 230px;
+    height: 300px;
+    background-color: #ffffff;
+}
+.course h3 {
+    width: 230px;
+    height: 50px;
+    background-color: #9bceea;
+    font-size: 18px;
+    text-align:center;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.bd {
+    padding: 0 20px;
+}
+.bd  ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+.bd ul li a {
+    font-size: 16px;
+    color: #050505;
+}
+.bd ul li a:hover {
+    color: #00a4ff;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #b7b7b7;
+}
+.bd  ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* goods部分 */
+.goods {
+    height: 60px;
+    background-color: #fff;
+    /* 行间距具有继承性，可以继承给他的子标签 */
+    line-height: 60px;
+    margin-top: 5px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a {
+    padding: 0 30px;
+    border-left:1px solid #cececf ;
+}
+.goods .mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* box的部分 */
+.box {
+    margin-top: 35px;
+}
+.box-hd {
+    height: 42px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.box-hd a {
+    float: right;
+    margin: 10px 30px 0 0;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box-bd ul {
+    width: 1225px;
+}
+.box-bd ul li {
+    /* 子绝父相 */
+    float: left;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #fff; 
+}
+.box-bd ul li>img {
+    position: absolute;
+    top: 4px;
+    left: 192px;
+}
+.box-bd ul li a img {
+    width: 100%;
+}
+.box-bd ul li h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+    margin:25px 20px 20px 25px;
+}
+.box-bd ul li h4 a:hover {
+    color: #00a4ff;
+}
+.box-bd ul li .neir {
+    border-color: pink;
+}
+.box-bd ul li  p {
+    font-size: 12px;
+    margin-left: 25px;
+}
+.box-bd ul li p .span1 {
+    color: #ff7c2d;
+}
+.box-bd ul li p .span2 {
+    color: #a5a5a5;
+}
+
+/* footer部分 */
+.footer {
+    height: 415px;
+    background-color: #fff;
+}
+.footer .w {
+    padding-top: 35px;
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #666666;
+}
+.copyright a {
+    display: inline-block;
+    font-size: 16px;
+    color: #00a4ff;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    line-height: 33px;
+    text-align: center;
+}
+
+.links{
+    float: right;
+}
+.links dl {
+    float: right;
+    margin-left:95px;
+}
+.links dl dt {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.links dl dd {
+    
+    margin-bottom: 9px;
+    
+}
+.links dl dd a {
+    font-size: 12px;
+    color: #333333;
+    color: #050505;
+}
+.links dl dd a:hover {
+    color: #00a4ff;
+}
+
+
+/* 以下内容是后期学习时应需一个滚动的网页来测试固定定位，所敲写的代码 */
+/* 对于这个网页可有可无 */
+.guanggao {
+    position: fixed;
+    left: 0;
+    top: 100px;
+}
+.guanggao1 {
+    position: fixed;
+    right: 0;
+    top: 100px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图的使用</title>
+    <style>
+        /* 网页的x轴是从左往右递增,y轴是从上往下递增 */
+        .box {
+            width: 60px;
+            height: 60px;
+            margin: 100px auto;
+            /* 精灵图，由很多个小的图片组成 */
+            /* 默认这个盒子在这张图的左上角，而我们要的图片在右边，所以就需要图片往坐左边移 */
+            background: url(image/sprites.png) no-repeat -182px 0;
+        }
+
+        .box2 {
+            width: 27px;
+            height: 25px;
+            margin: 0 100px;
+            background: url(image/sprites.png) no-repeat -155px -106px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

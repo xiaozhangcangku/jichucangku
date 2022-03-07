@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父子级盒子边距塌陷问题</title>
+    <style>
+        .one {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* 因为不加边框的话,就没有完全的隔开,所以当two有外边距时,大盒子会跟着一起增加外边距 */
+            /* transparent是透明的意思,然后加一个透明的边框来把他分隔开来,这样子级盒子就可以有外边距 */
+            /* border: 1px solid transparent; */
+            /* 给大盒子加个内边距也可以 */
+
+
+            overflow: hidden;
+            /* 或者直接输入这一段代码,也可以直接解决这个问题,而且不会改变盒子自身的大小 */
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

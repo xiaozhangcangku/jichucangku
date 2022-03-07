@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型之边框</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            /* border-width: 5px;  边框厚度*/
+            /* border-style: solid; 实线边框 */
+            /* border-style: dashed; 虚线边框 */
+            /* border-style: dotted;  点线边框 */
+            /* border-color: pink; */
+            /* ----------------------------------- */
+
+            /* 边框的复合写法 */
+            /* border: 5px solid pink; */
+
+
+        }
+
+        /* 还有上边框，下边框，左边框，右边框 */
+        .div1 {
+            width: 300px;
+            height: 300px;
+            border-top: 5px solid pink;
+            border-bottom: 10px dashed purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="div1"></div>
+</body>
+
+</html>

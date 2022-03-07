@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘性定位</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .nav {
+            /* 粘性定位 */
+            position: sticky;
+            /* 这个top值是，当粘性定位有了时，距离浏览器最顶上的高度 */
+            top: 10px;
+            width: 800px;
+            height: 50px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+    </div>
+</body>
+
+</html>

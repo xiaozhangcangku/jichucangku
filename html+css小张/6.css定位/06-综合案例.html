@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-style: italic;
+            border-top: 5px dashed #A196ac;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 500px;
+            height: 280px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        .tb-promo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .prev,
+        .next {
+            /* 加了绝对定位的盒子可以直接设置宽度和高度 */
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            /* 因为到这个盒子的一半，只是小盒子的上面挨到大盒子的一半，所以还要在往上进去-15px */
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .7);
+        }
+
+        .prev {
+            left: 0;
+            /* 左下 右下 右上 左下  */
+            border-radius: 0 15px 15px 0;
+        }
+
+        .next {
+            right: 0;
+            /* 左下 右下 右上 左下  */
+            border-radius: 15px 0 0 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            width: 70px;
+            height: 13px;
+            left: 50%;
+            margin-left: -35px;
+            bottom: 0px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 6.5px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            /* 这样就变成一个圆了 */
+            border-radius: 50%;
+            margin: 2.5px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="image/tb.jpg" alt="">
+        <a href="" class="prev">&lt;</a>
+        <a href="" class="next">&gt;</a>
+        <ul class="promo-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

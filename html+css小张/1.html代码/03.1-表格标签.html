@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签的使用(显示、展示数据)</title>
+</head>
+<body>
+    
+    <table> <!-- table是表格标签  tr是行标签，一定要嵌套使用 td就是在tr内的单元格-->
+        <!-- 这就是一个三行三列的表格，表格的基础用法 -->
+       
+        <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+        <tr><td>张玉炬</td> <td>男</td> <td>19</td></tr>
+        <tr><td>张玉煌</td> <td>男</td> <td>19</td></tr>
+    </table>
+    <br>
+    <!-- th表头单元格,里面的文字会居中加粗 -->
+    <table>
+        <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+        <tr><td>张玉炬</td> <td>男</td> <td>19</td></tr>
+        <tr><td>张玉煌</td> <td>男</td> <td>19</td></tr>
+    </table>
+    <br>
+    <!-- 表格属性，后面会用css，现在先记一下英语单词和理解一下,不建议直接在这里面写 -->
+    <table align="center" border="1" cellpadding="20" cellspacing="5" width="260" height="260"> <!-- alinght是页面的表格在页面对齐的方式-->
+        <!-- border是表格边框，1代表有，无边框就不需要写 -->
+        <!-- cellpading标签是文字距离边框的距离，以像素值为单位-->
+        <!-- cellspaciing标签是单元格之间的空白距离，默认为2个像素 -->
+        <!-- width标签是指定表格的宽度，以像素为单位 -->
+        <!-- height标签是指定表格的高度,以像素为单位 -->
+        <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+        <tr><td>张玉炬</td> <td>男</td> <td>19</td></tr>
+        <tr><td>张玉煌</td> <td>男</td> <td>19</td></tr>
+    </table>
+</body>
+</html>
