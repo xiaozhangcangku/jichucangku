@@ -84,6 +84,9 @@ body {
     font-size: 14px;
     color: #a7a8a9;
 }
+.user img {
+   vertical-align: middle;
+}
 /* banner区域 */
 .banner {
     height: 420px;

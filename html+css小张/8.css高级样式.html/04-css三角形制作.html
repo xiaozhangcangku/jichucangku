@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角制作</title>
+    <style>
+        body {
+            background-color: rgb(156, 156, 156);
+        }
+
+        .box {
+            width: 0;
+            height: 0;
+            border-top: 10px solid pink;
+            border-right: 10px solid red;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid black;
+
+        }
+
+        .box1 {
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: pink;
+            margin: 20px auto;
+        }
+
+        /* ---------- */
+        /* 京东案例 */
+        .jd {
+            position: relative;
+            width: 80px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        .jd span {
+            position: absolute;
+            width: 0;
+            height: 0;
+            /* 为了照顾兼容性 */
+            line-height: 0;
+            font-size: 0;
+            /*  */
+            top: -10px;
+            right: 10px;
+            border: 5px solid transparent;
+            border-bottom-color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <!-- --------------- -->
+    <!-- 京东案例 -->
+    <div class="jd">
+        <span></span>
+    </div>
+</body>
+
+</html>
