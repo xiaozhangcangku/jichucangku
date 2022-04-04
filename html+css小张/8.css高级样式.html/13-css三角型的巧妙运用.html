@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角形强化应用</title>
+    <style>
+        .box {
+            /* 把下边框调成0就可以得到直角三角形，然后在调想留着的三角形的边框厚度 */
+            /* 厚度越小就会越细 */
+            width: 0;
+            height: 0;
+
+            /* ------------- */
+            /* border-top: 36px solid transparent;
+            border-right: 20px solid green;
+            border-bottom: 0 solid skyblue;
+            border-left: 0 solid purple;
+            margin-right: 50px; */
+            /* ------------ */
+
+            /* 这一段可以用几行代码搞定 */
+            /* 上右下左的颜色都是不一样的 */
+            border-color: transparent green transparent transparent;
+            /* 样式都是实线 */
+            border-style: solid;
+            /* 上右下左的边框厚度也是不一样的 */
+            border-width: 36px 20px 0 0;
+        }
+
+        .price {
+            width: 160px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .miaosha {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        .miaosha i {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 12px 0 0;
+            right: 0;
+        }
+
+        .origin {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="price">
+        <span class="miaosha">
+            ￥1650
+            <!-- i是专门做三角形的标签 -->
+            <i></i>
+        </span>
+        <span class="origin">￥5600</span>
+    </div>
+</body>
+
+</html>

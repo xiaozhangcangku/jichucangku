@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值的巧妙运用</title>
+    <style>
+        ul li {
+            float: left;
+            position: relative;
+            list-style: none;
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        /* 第一种方法 */
+        /* 加一个定位，这样子这个盒子就能覆盖在其他盒子之上 */
+        /* 并且是相对定位，所以还会保留原来的位置 */
+        /* ul li:hover {
+            position: relative;
+            border: 1px solid blue;
+        } */
+
+
+        /* 第二种方法 */
+        /* 如果li有定位，就用提升层级的方式来 */
+        ul li:hover {
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>A
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

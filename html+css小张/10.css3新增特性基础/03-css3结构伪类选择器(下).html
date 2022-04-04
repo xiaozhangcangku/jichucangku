@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3结构伪类选择器</title>
+    <style>
+        /* 也是把ul里面的第一个小li加样式 */
+        ul li:first-of-type {
+            background-color: pink;
+        }
+
+        /* 也是把ul里面的最后一个小li加样式 */
+        ul li:last-of-type {
+            background-color: pink;
+        }
+
+        /* 把所有双数位的盒子选出来 odd就是单数 */
+        ul li:nth-of-type(even) {
+            background-color: skyblue;
+        }
+
+        /* -----------------区别-------------------- */
+
+        /* 这个意思是section所有的元素都是他孩子，所以要选第一个div就是第二个孩子 */
+        section div:nth-child(2) {
+            background-color: blueviolet;
+        }
+
+        pre div:nth-of-type(1) {
+            background-color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>e
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+
+    <pre>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </pre>
+</body>
+
+</html>

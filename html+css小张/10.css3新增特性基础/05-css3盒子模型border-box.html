@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3盒子模型border-box</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 像这个添加边框和这个增加内边距会直接在撑大盒子 */
+            border: 20px solid red;
+            padding: 20px;
+            /* 这个意思就是默认让边框和内边距撑大盒子，默认的模式就是这样的，写不写都行 */
+            box-sizing: content-box;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 像这个添加边框和这个增加内边距会直接在撑大盒子 */
+            border: 20px solid red;
+            padding: 20px;
+            /* 这意思就是设置的高度和宽度是多少就是多少，无论怎么样都不会撑大盒子 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        小猪佩琦
+    </div>
+
+    <p>
+        小猪乔治
+    </p>
+</body>
+
+</html>

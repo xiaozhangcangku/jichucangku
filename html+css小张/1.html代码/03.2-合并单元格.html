@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="zh-Ch">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>合并单元格</title>
 </head>
+
 <body>
     <table align="center" border="1" cellspacing="0" width="500" height="249">
         <thead>
-          
+
         </thead>
-           
+
         <tbody>
             <tr>
-                <td></td> 
-                <td colspan="2"></td> 
-                                <!-- 因为在第二列第一个单元格进行了跨列合并2个单元格，所以就需要把第一行的第三个单元格进行删除 -->
+                <td></td>
+                <td colspan="2"></td>
+                <!-- 因为在第二列第一个单元格进行了跨列合并2个单元格，所以就需要把第一行的第三个单元格进行删除 -->
             </tr>
 
             <tr>
                 <td rowspan="2"></td>
-                <td></td> 
+                <td></td>
                 <td></td>
             </tr>
 
             <tr>
-                            <!-- 因为在第二行第一个单元格那里跨行合并了两个，所以需要删除，第三行的第一个单元格 -->
-                <td></td> 
+                <!-- 因为在第二行第一个单元格那里跨行合并了两个，所以需要删除，第三行的第一个单元格 -->
+                <td></td>
                 <td></td>
             </tr>
 
         </tbody>
     </table>
 </body>
+
 </html>

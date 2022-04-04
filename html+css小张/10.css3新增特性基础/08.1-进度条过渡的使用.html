@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进度条过渡的使用</title>
+    <style>
+        .bar {
+            width: 150px;
+            height: 15px;
+            border-radius: 7.5px;
+            border: 1px solid red;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+
+        .bar_in {
+            width: 50%;
+            height: 100%;
+            border-radius: 6.5px;
+            background-color: red;
+            transition: width 3s;
+        }
+
+        .bar:hover .bar_in {
+            width: 100%;
+        }
+
+        /* ------------------- */
+        /* 用一个大盒子进行背景色 */
+        .mi {
+            position: relative;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            /* 隐藏溢出的部分 */
+            overflow: hidden;
+        }
+
+        .rec {
+            /* 给这个长方形的盒子添加定位 */
+            position: absolute;
+            width: 100px;
+            height: 35px;
+            left: 0;
+            margin-top: 10px;
+            /* 一开始left值是0，改变的left值的移动时间，从0到-60px的时间 */
+            transition: left 0.25s;
+        }
+
+        .rec img:first-child {
+            float: left;
+        }
+
+        .rec img:last-child {
+            float: right;
+        }
+
+        .mi:hover .rec {
+            /* 当鼠标经过这个大盒子时，就会把.rec则会个盒子往左进行移动 */
+            left: -60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+
+    <div class="mi">
+        <!-- 创建一个长方形的盒子，然后通过移动则会个长方形盒子来实现，平移的动画效果 -->
+        <div class="rec">
+            <img src="image/mi.png" alt="">
+            <img src="image/arr.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

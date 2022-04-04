@@ -7,12 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>解决图片底下空白</title>
     <style>
+        div {
+            border: 2px solid red;
+        }
 
+
+        .box {
+            margin-top: 100px;
+        }
+
+        .box img {
+
+            /* 加 与下面对齐，中间对齐 */
+            vertical-align: bottom;
+
+            /* 把这个img转换为块级元素，推荐使用上面那一种 */
+            /* display: block; */
+        }
     </style>
 </head>
 
 <body>
+    <div>
+        <img src="image/ldh.jpg" alt="">
+    </div>
 
+    <div class="box">
+        <img src="image/ldh.jpg" alt="">
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器之字体图标</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?slmz20');
+            src: url('fonts/icomoon.eot?slmz20#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?slmz20') format('truetype'),
+                url('fonts/icomoon.woff?slmz20') format('woff'),
+                url('fonts/icomoon.svg?slmz20#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            width: 200px;
+            height: 35px;
+            border: 1px solid red;
+
+        }
+
+        div::before {
+            position: absolute;
+            top: 18px;
+            left: 188px;
+            font-family: 'icomoon';
+            /* content: ''; */
+            /* 直接赋值符号的代码进行转译也可以 */
+            content: '\1f300';
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

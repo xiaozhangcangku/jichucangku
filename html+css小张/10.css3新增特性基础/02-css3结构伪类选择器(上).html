@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* 1.选择ul里面的第一个孩子为li的标签 */
+        /* 这个li可以不加，意思就是所有ul内的第一个元素 */
+        ul li:first-child {
+            background-color: pink;
+        }
+
+        /* 2.选择ul里面的最后一个孩子为li的标签 */
+        ul li:last-child {
+            background-color: pink;
+        }
+
+        /* 3. 把ul下面的li为偶数的孩子选出来*/
+        .ul2 li:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        /* 4.把所有奇数的孩子选出来 */
+        .ul2 li:nth-child(odd) {
+            background-color: green;
+        }
+
+        /* 5.nth-child(n) 从0开始，每次增加1 往后面计算 必须是n不能是其他字母 */
+        /* 里面也可以写公式 */
+        ol li:nth-child(n) {
+            background-color: purple;
+        }
+
+
+        /* 6. 把ul下面的li为偶数的孩子选出来*/
+        dl dd:nth-child(2n) {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+
+    <ul class="ul2">
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ol>
+
+    <dl>
+        <dd>我是第1个孩子</dd>
+        <dd>我是第2个孩子</dd>
+        <dd>我是第3个孩子</dd>
+        <dd>我是第4个孩子</dd>
+        <dd>我是第5个孩子</dd>
+        <dd>我是第6个孩子</dd>
+        <dd>我是第7个孩子</dd>
+        <dd>我是第8个孩子</dd>
+    </dl>
+</body>
+
+</html>

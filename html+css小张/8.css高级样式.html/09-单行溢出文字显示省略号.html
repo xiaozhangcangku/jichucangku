@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单行文本溢出显示省略号</title>
+    <style>
+        div {
+            width: 100px;
+            height: 70px;
+            background-color: pink;
+            margin: 100px auto;
+
+            /* 这个单词的意思是如果文字显示不开自动换行 */
+            /* white-space: normal; */
+
+            /* 这个单词的意思是如果文字显示不开，也要强制你在一行内显示 */
+            white-space: nowrap;
+
+            /* 溢出的部分隐藏 */
+            overflow: hidden;
+
+            /* 把溢出的文字变为省略号 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>如果可以，时间同意，我也想把你在我心里省略</div>
+</body>
+
+</html>

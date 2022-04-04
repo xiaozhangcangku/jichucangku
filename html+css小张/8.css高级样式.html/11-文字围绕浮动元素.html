@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字围绕浮动元素</title>
+    <style>
+        .box {
+            width: 350px;
+            height: 70px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .pic {
+            /* 浮动的元素是不会压住文字的 */
+            float: left;
+            width: 120px;
+            height: 60px;
+            margin-right: 5px;
+        }
+
+        .pic img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="pic"><img src="image/abcd.jpg" alt=""></div>
+        <p>你对我的爱，是真的爱吗，还是你那所谓的责任感罢了,不如我们就这样吧</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增伪元素选择器</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 在父元素内容的前面创建元素，什么时候都在内容前面 ,但是这个是属于行内元素*/
+        div::before {
+            display: inline-block;
+            content: '我';
+            width: 20px;
+            height: 20px;
+            background-color: purple;
+        }
+
+        /* 在父元素内容的后面创建元素，只会在后面 */
+        div::after {
+            content: '小猪佩琦';
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        是
+    </div>
+</body>
+
+</html>

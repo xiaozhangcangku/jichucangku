@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算盒子宽度函数als()</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son {
+            width: calc(100% - 60px);
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 需求是子盒子的宽度，永远比父盒子小30px -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
