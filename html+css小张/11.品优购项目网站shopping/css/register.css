@@ -1,0 +1,201 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    overflow: hidden;
+    width: 219px;
+    top: 25px;
+    transition: top 5s 0.5s;
+}
+
+.logo:hover {
+    display: block;
+    overflow: visible;
+    top: -874px;
+}
+
+.logo h1 img:first-of-type {
+    margin-bottom: 24px;
+}
+
+.logo h1 img:nth-child(n+2) {
+    width: 100%;
+    height: 150px;
+}
+
+.reg-form {
+    height: 522px;
+    border: 1px solid #dfdfdf;
+    margin-top: 20px;
+}
+
+.reg-form .title {
+    height: 41px;
+    line-height: 41px;
+    padding: 0 10px;
+    font-size: 18px;
+    background-color: #ececec;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.title h5 {
+    float: left;
+    font-weight: 400;
+}
+
+.title h6 {
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.title h6 a {
+    font-size: 14px;
+    color: #c81623;
+}
+
+.form {
+    width: 600px;
+    /* background-color: pink; */
+    margin: 54px auto 0;
+}
+
+.form ul li:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+/* 给那个装文字的盒子一个宽度，然后在全部靠右对齐，这样所有的文字都能靠到最右，表单也能对齐 */
+.form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.inp {
+    width: 240px;
+    height: 36px;
+    border: 1px solid #999999;
+}
+
+.error {
+    color: #df3033;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* 让图片跟文字垂直居中 */
+    vertical-align: middle;
+    /* background-color: pink; */
+}
+
+.error_icon {
+    background: url(../image/first-page-image/register_image/error.png) no-repeat;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url(../image/first-page-image/register_image/success.png) no-repeat;
+
+}
+
+.safe {
+    padding-left: 170px;
+}
+
+.safe span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.safe em {
+    color: #fff;
+    padding: 0 10px;
+}
+
+.safe .ruo {
+    background-color: #de1111;
+}
+
+.safe .zhong {
+    background-color: #40b83f;
+}
+
+.safe .qiang {
+    background-color: #f79100;
+}
+
+.form ul li:nth-of-type(4) {
+    margin-top: 0;
+}
+
+.agree input {
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+}
+
+.agree {
+    padding-left: 100px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.form ul li:last-of-type {
+    padding-left: 95px;
+}
+
+.submit {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+
+
+
+.footer {
+    background-color: #fff;
+    height: 125px;
+}
+
+.copyright .introduce {
+    height: 28px;
+    margin: 20px 0 0 117px;
+}
+
+.copyright .introduce ul li {
+    float: left;
+}
+
+.copyright ul li span {
+    margin: 0 10px;
+}
+
+.copyright ul li span,
+a {
+    font-size: 12px;
+}
+
+.copyright p {
+    text-align: center;
+}

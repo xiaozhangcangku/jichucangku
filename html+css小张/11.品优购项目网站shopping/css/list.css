@@ -1,0 +1,145 @@
+.nav {
+    overflow: hidden;
+}
+
+.second_kill {
+    position: absolute;
+    width: 71px;
+    height: 32px;
+    border-left: 1px solid #b1191a;
+    padding-left: 14px;
+    left: 185px;
+    bottom: 33px;
+}
+
+.sk_list {
+    float: left;
+    line-height: 47px;
+}
+
+.sk_list ul li {
+    float: left;
+
+}
+
+.sk_list ul li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    padding: 0 30px;
+}
+
+.sk_con {
+    float: left;
+    /* 这里的文字的行高大于高度，文字就会偏下 */
+    line-height: 49px;
+    /* 但是下面的就会突出来，因为这个盒子只有47px，影响下面的布局 */
+    /* 所以就需要隐藏溢出来的部分 */
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    font-size: 14px;
+    padding: 22.5px;
+}
+
+/* 导航栏部分end */
+
+.sk_bd ul li {
+    float: left;
+    position: relative;
+    width: 290px;
+    height: 460px;
+    margin-top: 15px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:hover {
+    border-color: #e12228;
+}
+
+.sk_bd ul li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.sk_bd .hd {
+    width: 288px;
+    text-align: center;
+    /* background-color: purple; */
+}
+
+.middle {
+    padding: 0 11px;
+}
+
+.middle h6 a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.middle h5 {
+    margin-top: 5px;
+    color: #e12228;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.middle h5 span {
+    text-decoration: line-through;
+    color: #ababab;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.middle .yishou span {
+    color: #ababab;
+    font-size: 14px;
+}
+
+.yishou .jindu {
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #ed282e;
+    border-radius: 5px;
+}
+
+.jindu .tiao {
+    float: left;
+    height: 100%;
+    width: 100px;
+    background-color: #ed282e;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.yishou span:last-of-type {
+    font-size: 14px;
+    color: #ababab;
+}
+
+.yishou span:last-of-type i {
+    color: #e12228;
+}
+
+.sk_bd .bd {
+    position: absolute;
+    width: 288px;
+    height: 50px;
+    bottom: 0;
+    background-color: #b1191a;
+}
+
+.sk_bd .bd a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
